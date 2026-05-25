@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/name
+    username: USERNAME
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: root
+    password: password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+
+
+
+
+
+
+
+app:
+  images:
+    upload-dir: C:/Users/amish/Downloads/ecommerce-backend-uploads
