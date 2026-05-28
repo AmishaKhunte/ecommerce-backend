@@ -34,7 +34,10 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/user/register",
                                 "/api/user/login",
-                                "/api/user/reset-password"
+                                "/api/user/reset-password",
+                                "/api/notifications/**",
+                                "/api/order/**",
+                                "/error"
                         ).permitAll()
 
                         // PUBLIC ADDRESS APIs
@@ -62,7 +65,8 @@ public class SecurityConfig {
                                 HttpMethod.GET,
                                 "/api/admin/products/category/**",
                                 "/api/admin/product/**",
-                                "/api/admin/product/by-name/**"
+                                "/api/admin/product/by-name/**",
+                                "/api/products/**"
                         ).permitAll()
 
                         // ADMIN APIs

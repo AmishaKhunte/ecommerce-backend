@@ -44,6 +44,9 @@ public class OrderEntity {
     @Column(name = "payment_status", length = 50)
     private String paymentStatus;
 
+    @Column(name = "delivery_otp")
+    private String deliveryOtp;
+
     @Column(name = "razorpay_order_id", length = 255)
     private String razorpayOrderId;
 

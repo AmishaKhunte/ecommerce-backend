@@ -13,6 +13,6 @@ public class OrderItemsMapper {
         return modelMapper.map( itemsEntity, OrderItemsDto.class);
     }
 
-    public static OrderItemsEntity entityToDto(OrderItemsDto itemsDto){
+    public static OrderItemsEntity dtoToEntity(OrderItemsDto itemsDto){
         return modelMapper.map(itemsDto, OrderItemsEntity.class);    }
 }
